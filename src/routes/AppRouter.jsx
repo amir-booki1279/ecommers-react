@@ -29,6 +29,7 @@ import ChatSupport from "../pages/sellers/ChatSupport";
 import SellerProfile from "../pages/sellers/SellerProfile";
 import EditProduct from "../pages/sellers/EditProduct";
 import SellerOrderDetails from "../pages/sellers/SellerOrderDetails";
+import Home from "../pages/Main/Home";
 
 
 
@@ -38,7 +39,8 @@ export default function AppRouter() {
   return (
     <Routes>
       <Route element={<MainLayout/>}>
-       
+          <Route element={<Home/>} path="/" />
+
       </Route>
 
       {/* admin routes */}
