@@ -4,9 +4,14 @@
 @custom-variant dark (&:where(.dark,.dark *));
 
 @theme{
-  --color-primary : #fea928 , 
   
-
+  --breakpoint-xl-custom : 1200px;
+  --breakpoint-lg-custom : 1080px;
+  --breakpoint-md-lg-custom : 991px;
+  --breakpoint-md-custom : 768px;
+  --breakpoint-sm-custom : 576px;
+  --breakpoint-xs-custom : 480px;
+  --breakpoint-2xs-custom : 340px;
 }
 @utility container{
   padding-right:1rem;
