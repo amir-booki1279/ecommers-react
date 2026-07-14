@@ -22,6 +22,7 @@ const Header = () => {
   const [showSideBar, setShowSideBar] = useState(true);
   const [categoryShow, setCategoryShow] = useState(true);
   const [searchValue, setSearchValue] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [category, setCategory] = useState("");
 
 
