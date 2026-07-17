@@ -41,7 +41,7 @@ const Banner = () => {
                                     {
                                         [1,2,3,4,5,6].map((img,i)=>(
                                             <Link key={i}>
-                                                <img src={`/frontend/images/banner/${img}.jpg`} alt="" />
+                                                <img className='object-cover' src={`/frontend/images/banner/${img}.jpg`} alt="" />
                                             </Link>
                                         ))
                                     }

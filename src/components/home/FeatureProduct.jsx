@@ -20,7 +20,7 @@ const FeatureProduct = () => {
                                 <div className='flex justify-center items-center absolute text-white w-9.5 h-9.5 rounded-full bg-red-500 font-semibold text-xs left-2 top-2'>
                                     8%
                                 </div>
-                                <img className='max-sm:w-full w-[90%] mx-auto  h-60' src={`/frontend/images/products/${i+1}.webp`} alt="" />
+                                <img className='max-sm:w-full w-[90%] mx-auto object-cover  h-60' src={`/frontend/images/products/${i+1}.webp`} alt="" />
                                 <ul className='flex transition-all duration-700 -bottom-10 justify-center items-center gap-2 absolute w-full group-hover:bottom-3'>
                                     <li className='w-9.5 h-9.5 cursor-pointer bg-white flex justify-center items-center rounded-full hover:bg-[#059473] hover:text-white hover:rotate-720 transition-all'>
                                         <FaRegHeart/>

@@ -65,7 +65,7 @@ const Category = () => {
         {categories.map((c, i) => (
           <Link to={'#'}  key={i} className="h-46.25 border border-slate-300 block">
             <div className="w-full h-full  relative p-3">
-                <img src={`/frontend/images/products/${i+1}.webp`} alt="" />
+                <img className="object-cover" src={`/frontend/images/products/${i+1}.webp`} alt="" />
                 <div className="absolute bottom-6 mx-auto w-full font-bold mask-linear-from-100% flex justify-center items-center">
                     <span className="py-0.5 px-6 bg-[#3330305d] text-white">{c}</span>
                 </div>

@@ -9,10 +9,15 @@ import Products from "../../components/home/Products";
 import {BsFillGridFill} from 'react-icons/bs'
 import { FaThList } from "react-icons/fa";
 import ShopProduct from "../../components/product/ShopProduct";
+import Pagination from "../../components/layout/Pagination";
 
 const Shops = () => {
   const [filter, setFilter] = useState(true);
   const [state, setState] = useState({values:[50,1500]});
+  const [pageNumber,setPageNumber] = useState(1)
+  // eslint-disable-next-line no-unused-vars
+  const [parPage,setParPage] = useState(1)
+
   
   // eslint-disable-next-line no-unused-vars
   const [rating, setRating] = useState('');
@@ -164,7 +169,7 @@ const Shops = () => {
                     <div className="py-4 bg-white mb-10 px-3 rounded-md flex justify-between items-center border border-slate-200">
                             <h2 className="text-lg font-medium to-slate-600">14 Products</h2>
                             <div className="flex justify-center items-center gap-3">
-                                <select className="p-1 border outline-0 text-slate-600 font-semibold border-slate-200" name="" id="">
+                                <select className="p-1.5 border outline-0 text-slate-600 font-semibold border-slate-200" name="" id="">
                                     <option value=''>Sort By</option>
                                     <option value='low-to-high'>Low To High Price</option>
                                     <option value='high-to-low'>High To Low Price </option>
@@ -184,6 +189,9 @@ const Shops = () => {
                     {/* List Items */}
                     <div className="pb-8">
                         <ShopProduct style={style}/>
+                    </div>
+                    <div>
+                        <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber} totalItem={10} parPage={parPage} showItem={Math.floor(10 / 3)}/>
                     </div>
                 </div>
             </div>
