@@ -30,6 +30,7 @@ import SellerProfile from "../pages/sellers/SellerProfile";
 import EditProduct from "../pages/sellers/EditProduct";
 import SellerOrderDetails from "../pages/sellers/SellerOrderDetails";
 import Home from "../pages/Main/Home";
+import Shops from "../pages/Main/Shops";
 
 
 
@@ -40,6 +41,8 @@ export default function AppRouter() {
     <Routes>
       <Route element={<MainLayout/>}>
           <Route element={<Home/>} path="/" />
+          <Route element={<Shops/>} path="/shops" />
+
 
       </Route>
 
