@@ -31,6 +31,9 @@ import EditProduct from "../pages/sellers/EditProduct";
 import SellerOrderDetails from "../pages/sellers/SellerOrderDetails";
 import Home from "../pages/Main/Home";
 import Shops from "../pages/Main/Shops";
+import Card from "../pages/Main/Card";
+import Shipping from "../pages/Main/Shipping";
+
 
 
 
@@ -42,6 +45,10 @@ export default function AppRouter() {
       <Route element={<MainLayout/>}>
           <Route element={<Home/>} path="/" />
           <Route element={<Shops/>} path="/shops" />
+          <Route element={<Card/>} path="/card" />
+          <Route element={<Shipping/>} path="/shipping" />
+
+
 
 
       </Route>

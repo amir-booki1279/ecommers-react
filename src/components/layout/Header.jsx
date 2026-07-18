@@ -192,14 +192,14 @@ const Header = () => {
                       {wishList_count}
                     </div>
                   </div>
-                  <div className="relative flex justify-center items-center cursor-pointer w-8.75 h-8.75 rounded-md bg-[#e2e2e2]">
+                  <Link to={'/card'} className="relative flex justify-center items-center cursor-pointer w-8.75 h-8.75 rounded-md bg-[#e2e2e2]">
                     <span className="text-xl text-green-500">
                       <FaCartShopping />
                     </span>
                     <div className="w-5 h-5 absolute bg-red-500 rounded-full text-white flex justify-center items-center -top-0.75 -right-1.25">
                       {wishList_count}
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
