@@ -33,6 +33,7 @@ import Home from "../pages/Main/Home";
 import Shops from "../pages/Main/Shops";
 import Card from "../pages/Main/Card";
 import Shipping from "../pages/Main/Shipping";
+import Details from "../pages/Main/Details";
 
 
 
@@ -47,6 +48,8 @@ export default function AppRouter() {
           <Route element={<Shops/>} path="/shops" />
           <Route element={<Card/>} path="/card" />
           <Route element={<Shipping/>} path="/shipping" />
+          <Route element={<Details/>} path="/shops/detail/:slug" />
+
 
 
 
